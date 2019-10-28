@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Date of birth</th>
+          <th scope="col">Email</th>
+          <th scope="col">Address</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.id }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.lastname }}</td>
+          <td>{{ user.dob.substring(0, 10) }}</td>
+          <td><a href="mailto:{{ user.email }}">{{ user.email }}</a></td>
+          <td>{{ user.address }}</td>
+           
+      <div class="btn-group">
+        <button type="button" class="btn btn-default btn"><i class="glyphicon glyphicon-pencil"></i></button>  
+        <button type="button" class="btn btn-default btn"><i class="glyphicon glyphicon-trash"></i></button> 
+       
+     </div>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

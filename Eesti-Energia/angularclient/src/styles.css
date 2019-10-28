@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
+.image{
+    height:40em; 
+    background-size:cover;
+    width:auto;
+    background-image:url('assets/imagen/eesti.jpg');
+    background-position:50% 50%;
+  }

@@ -1,0 +1,4 @@
+com\eesti\energia\application\entities\User.class
+com\eesti\energia\application\controllers\UserController.class
+com\eesti\energia\application\Application.class
+com\eesti\energia\application\repositories\UserRepository.class
